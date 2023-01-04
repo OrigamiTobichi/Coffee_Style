@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/coffee_style/public/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1
+        class="text-orange-400 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold pt-7">
+        Live anywhere
+    </h1>
+    <h2 class="pt-5 text-green-400 text-center font-[400] text-lg mb-6">
+        Keep clam & travel on
+    </h2> -->
+    <!-- Reponsive xét theo thứ tự từ mobile-first -> sm -> md -> lg -> xl -> 2xl để có thể đè được min của nhau-->
+    <!-- <div
+        class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm: grid-rows-2 sm:gap-x-3 sm:mx-3 md:grid-cols-3 gap-x-8 max-w-6xl min-[1180px]:mx-auto lg:mx-4">
+        <div class="">
+            <div class="h-96 mb-5">
+                <img class="object-cover w-full h-full rounded-lg"
+                    src="https://cdn.dribbble.com/userupload/4217540/file/original-691292fee3181896f058538a085b9caf.jpg?compress=1&resize=1200x900"
+                    alt="" />
+            </div>
+            <h3 class="text-center font-medium text-[18px] mb-[12px]">
+                Enjoy the great cold
+            </h3>
+            <span class="block text-center text-gray-400 text-[14px]">6,789
+                properties</span>
+        </div>
+        <div>
+            <div class="h-96 mb-5">
+                <img class="object-cover w-full h-full rounded-lg"
+                    src="https://cdn.dribbble.com/userupload/4217540/file/original-691292fee3181896f058538a085b9caf.jpg?compress=1&resize=1200x900"
+                    alt="" />
+            </div>
+            <h3 class="text-center font-medium text-[18px] mb-[12px]">
+                Enjoy the great cold
+            </h3>
+            <span class="block text-center text-gray-400 text-[14px]">6,789
+                properties</span>
+        </div>
+        <div>
+            <div class="h-96 mb-5">
+                <img class="object-cover w-full h-full rounded-lg"
+                    src="https://cdn.dribbble.com/userupload/4217540/file/original-691292fee3181896f058538a085b9caf.jpg?compress=1&resize=1200x900"
+                    alt="" />
+            </div>
+            <h3 class="text-center font-medium text-[18px] mb-[12px]">
+                Enjoy the great cold
+            </h3>
+            <span class="block text-center text-gray-400 text-[14px]">6,789
+                properties</span>
+        </div>
+    </div> -->
+    <div class="group border border-lime-300 cursor-pointer">
+        <button
+            class="inline-block m-5 px-2 py-2 text-white bg-blue-500 rounded-lg lg:group-hover:bg-red-400 transition-all">
+            Confirm
+        </button>
+    </div>
+    <!-- 
+    Để hover từ ngoài vào trong thì thêm attribute group cho thằng cha chứa nó .Và thằng con có syntax: group-hover: value
+    -->
+
+    <label for="check__input">Touch me!</label>
+    <input type="text" name="" value="" id="check__input"
+        class="rounded-lg mt-5 border-[3px] border-purple-400 bg-slate-300 outline-none p-2 focus:border-lime-500 transition-all">
+
+    <button type="submit" disabled
+        class="inline-block m-5 p-2 rounded-lg bg-purple-300 motion-safe:hover:scale-[1.2] transition-all disabled:opacity-50">Hover
+        me!</button>
+    <!--CUSTOM CHECKBOX-->
+    <!-- 
+        1.Thêm class cho tag cần để sử dụng bằng cách (peer/'name') và thêm 1 class vào tag muốn thừa làm peer bằng cách (peer-'pseudo'/'name':value)
+    -->
+    <div class="flex justify-center items-center">
+        <label for="checkbox" class="cursor-pointer">Click
+            me!</label>
+        <input type="checkbox" name="" value="" id="checkbox" class="peer hidden group">
+        <div class="ml-3 peer-checked:bg-red-500 rounded-lg ">
+            <i
+                class="fa-solid fa-star w-10 h-10 border border-fuchsia-500 rounded-lg flex justify-center items-center text-green-400 group-checked:text-blue-500"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>
