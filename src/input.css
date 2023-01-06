@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bin-top-menu-item {
+        @apply cursor-pointer py-1 relative hover:text-gray-700 after:absolute after:bottom-0 after:left-0 after:bg-light-coffee after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out;
+    }
+}
+
+@layer components {
+    .bin-icon {
+        @apply w-5 h-5 inline-block;
+    }
+}
+
+@layer components{
+    .bin-circle{
+        @apply text-xs text-center rounded-full px-[5px] bg-orange-500 text-white ;
+    }
+}
