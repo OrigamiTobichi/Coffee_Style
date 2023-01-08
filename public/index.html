@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/coffee_style/public/image/favicon/waifu1.jpg" sizes="16x16">
+    <link rel="stylesheet" href="/coffee_style/public/reset.css">
     <link rel="stylesheet" href="/coffee_style/public/style.css">
     <title>Coffee_Style</title>
 </head>
 
 <body>
     <div id="root">
-        <div class="content-wrapper max-w-screen-xl text-base mx-auto px-8 bg-slate-200">
+        <div class="content-wrapper font-Karla max-w-screen-xl text-base mx-auto md:px-8">
             <header class="py-6 mx-10">
-                <nav class="flex flex-row justify-between items-center">
-                    <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
+                <nav class="flex flex-row justify-between items-center relative">
+                    <div class="logo basis-1/6 text-center text-xl font-semibold cursor-pointer mr-10">
                         CoffeeStyle.
                     </div>
                     <ul
-                        class="flex flex-row justify-between items-center basis-3/6 uppercase text-sm text-gray-500 font-[500]">
+                        id="bin-top-menu" class="hidden basis-4/6 lg:flex lg:flex-row lg:justify-between lg:items-center uppercase text-sm text-gray-500 font-[500]">
                         <li class="bin-top-menu-item">
                             <a href="#" class="">Home</a>
                         </li>
@@ -38,13 +40,13 @@
                             <a href="#">StyleGuide</a>
                         </li>
                         <li class="bin-top-menu-item">
-                            <a href="#">Nguyen Bin</a>
+                            <a target="_blank" href="https://www.facebook.com/ducdzpro.ak/">Nguyen Bin</a>
                         </li>
                     </ul>
                     <ul
-                        class="basis-1/6 flex flex-row justify-center items-center ml-16 uppercase text-gray-500 font-[500] text-sm">
+                        class="basis-4/6 flex flex-row justify-end lg:basis-1/6 lg:items-center uppercase text-gray-500 font-[500] text-sm">
                         <li class="bin-top-menu-item">
-                            <a href="#" class="flex items-center">
+                            <a href="#" class="flex items-center justify-end">
                                 <svg class="bin-icon" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor">
@@ -56,31 +58,257 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="lg:hidden basis-1/6 cursor-pointer flex justify-end">
+                        <svg id="bin-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
                 </nav>
             </header>
-            <button class="btn-primary">
-                Save changes
-            </button>
             <!--End header--->
             <main>
-                <div class="slider">
-                    slider
+                <div
+                    class="slider h-[530px] bg-[url('./image/favicon/coffee.jpg')] bg-cover bg-no-repeat bg-bottom relative">
+                    <div class="w-full h-full bg-gray-900 opacity-40">
+                
+                    </div>
+                    <div
+                        class="text-center text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                        <div class="uppercase text-[12px] leading-[18px] tracking-[2px] font-[700] mb-3">
+                            Best Place To Buy Coffee</div>
+                        <div class="text-[48px] leading-[60px] mb-[10px] tracking-[3px]">Coffee Mugs</div>
+                        <div class="text-[18px] leading-[32px] mb-[25px] min-w-[300px] lg:min-w-[800px] ">
+                            The most versatile furniture system ever created. Designed to fit your life,
+                            made to move and grow.</div>
+                        <div
+                            class="uppercase text-[#161724] font-[700] tracking-[2px] text-[12px] cursor-pointer absolute left-[50%] translate-x-[-50%] px-6 py-4 whitespace-nowrap bg-white hover:opacity-95">
+                            Explore Our Product
+                        </div>
+                    </div>
                 </div>
                 <!--End slider--->
-                <div class="story">
-                    story
-                </div>
-                <!--End story--->
-                <div class="featured-mugs">
-                    featured-mugs
-                </div>
-                <!--End featured-mugs--->
-                <div class="more-products">
-                    more-products
-                </div>
+                    <div class="story px-8 md:px-0 ">
+                        <div class="h-full w-full">
+                            <div class="md:px-[120px] py-28 text-center">
+                                <div class="text-[#1d1f2e] text-[25px] leading-[40px] mb-4">Even the
+                                    all-powerful Pointing has no control about the blind texts.
+                                </div>
+                                <div class="text-[#1d1f2eb3] leading-[28px] mb-6">It is a paradisematic
+                                    country, in which roasted parts of sentences
+                                    fly into your mouth. Even the all-powerful Pointing has no control about
+                                    the
+                                    blind texts it is an almost unorthographic life One day however a small
+                                    line
+                                    of blind text by the name of Lorem Ipsum decided to leave for the far
+                                    World of
+                                    Grammar.</div>
+                                <div class="bin-story">
+                                    <a href="#">Read the full Story</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <div class="bin-feature">Features Mugs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End story--->
+                    <div class="featured-mugs mb-[100px]">
+                        <div class="flex justify-center items-center gap-x-6">
+                            <div class="flex flex-col justify-center items-center w-[39%]">
+                                <div class="group mb-[30px] h-[540px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                    <div class="bin-feature-mug">
+                                        <div
+                                        class="bin-explore-mug">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Pink Premium Ceramic</a>
+                                <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px]">$ 99.00 USD</span>
+                            </div>
+                            <div class="flex flex-col justify-center items-center w-[39%] relative">     
+                                <div class="group mb-[30px] h-[540px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a25acecdfd6_jakub-dziubak-394720-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                    <div class="bin-feature-mug">
+                                        <div
+                                        class="bin-explore-mug">
+                                            Explore Mug
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Golden Designers Mug</a>
+                                <div class="flex justify-center items-center gap-x-3">
+                                    <span class="mb-[13px] text-[#a25f4b] font-[500] text-[18px]">$50.00</span>
+                                    <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] relative before:content-[''] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:w-full before:h-[1.5px] before:bg-[#181a2768]">$69.00 USD</span>
+                                </div>    
+                                <span class="absolute right-0 top-0 py-[6px] px-[15px] mt-[10px] mr-[10px] text-[#a25f4b] bg-white font-[500] leading-[28px] text-center">On Sale.</span>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <!--End featured-mugs--->
+                        <div class="more-products flex flex-col items-center justify-center">
+                            <div class="bin-feature">More Products</div>
+                            <div class="flex justify-center items-center w-full gap-x-[28px] mb-[50px]">
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Red Love Cup</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] text-[#a25f4b] font-[500] text-[18px]">$25.00</span>
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] relative before:content-[''] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:w-full before:h-[1.5px] before:bg-[#181a2768]">$37.00 USD</span>
+                                    </div>
+                                    <span class="absolute right-0 top-0 py-[6px] px-[15px] mt-[10px] mr-[10px] text-[#a25f4b] bg-white font-[500] leading-[28px] text-center">On Sale.</span>
+                                </div>
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a0c09ece01c_steve-harvey-523112-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Black Tea Cup</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] text-[#a25f4b] font-[500] text-[18px]">$15.00</span>
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] relative before:content-[''] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:w-full before:h-[1.5px] before:bg-[#181a2768]">$29.00 USD</span>
+                                    </div>
+                                    <span class="absolute right-0 top-0 py-[6px] px-[15px] mt-[10px] mr-[10px] text-[#a25f4b] bg-white font-[500] leading-[28px] text-center">On Sale.</span>
+                                </div>
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a223decdff8_ronaldo-arthur-vidal-66241-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">B&W Essentials Mug</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] ">$19.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center w-full gap-x-[28px] mb-[50px]">
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6d09ece015_rocknwool-690694-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Winter Style Mug</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] ">$25.00 USD</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7ae493ece012_rawpixel-645289-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Ceramic Tea</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] ">$46.00 USD</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a8461ece016_nathan-dumlao-643391-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">No Handle Bar Cup</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] ">$34.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center w-full gap-x-[28px] mb-[50px]">
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a1db2ece009_natanja-grun-600152-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Espresso Cup by Mugs.co</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] ">$25.00 USD</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Pink Premium Ceramic</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] ">$99.00 USD</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center items-center relative basis-1/4">
+                                    <div class="group mb-[30px] h-[380px] w-full bg-[url('https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a2f3decdfa9_Image.jpg')] bg-center bg-cover bg-no-repeat">
+                                        <div class="bin-feature-mug">
+                                            <div
+                                            class="bin-explore-mug">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[20px] leading-[30px] mt-[10px] mb-[5px]">Summer Designer Cup</a>
+                                    <div class="flex justify-center items-center gap-x-3">
+                                        <span class="mb-[13px] leading-[28px] text-[#1d1f2eb3] font-[300] text-[15px] ">$29.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 <!--End more-products--->
-                <div class="coffee-magaize">
-                    coffee-magaize
+                <div class="coffee-magaize flex flex-col justity-center items-center">
+                    <div class="bin-coffee-magazine">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</div>
+                    <div class="flex justify-start items-center w-full gap-x-6">
+                        <div class="basis-1/2 flex justify-end items-center gap-x-6">
+                            <div class=" h-[280px] w-[280px] basis-1/2 bg-[url('https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a2f3decdfa9_Image.jpg')] bg-no-repeat bg-center bg-cover">
+                            </div>
+                            <div class="flex flex-col justify-between items-center h-[280px]">
+                                <div class="w-[160px] h-[130px] bg-[url('https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7aa6d0ecdfa7_Image%202.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                                <div class="w-[160px] h-[130px] bg-[url('https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a528fecdfa6_Image.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                            </div>
+                        </div>
+                        <div class="basic-1/2 flex flex-col justify-evenly items-start h-[280px] pl-[60px]">
+                            <span class="inline-block uppercase text-[12px] font-[700] tracking-[2px] leading-[18px] text-[#1d1f2eb3]">Premium Offer</span>
+                            <h2 class="text-[36px] leading-[50px]">Get our Coffee Magazine</h2>
+                            <p class="leading-[28px] text-[#1d1f2eb3] max-w-sm">The most versatile furniture system ever created. Designed to fit your life.</p>
+                            <div
+                                class="uppercase text-[white] font-[700] px-[24px] py-[18px] tracking-[2px] leading-[18px] text-[12px] bg-[#1d1f2e] hover:opacity-90 transition-all ease-linear duration-200">
+                                Start Shopping
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--End coffee-magaize--->
                 <div class="lifestyle-story">
@@ -101,6 +329,7 @@
         <!--End content-wrapper--->
     </div>
     <!--End root--->
+    <script src="./main.js"></script>
 </body>
 
 </html>
