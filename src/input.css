@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+
 @layer components {
     .bin-top-menu-item {
-        @apply cursor-pointer py-1 relative hover:text-gray-700 after:absolute after:bottom-0 after:left-0 after:bg-light-coffee after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out;
+        @apply cursor-pointer py-1 relative hover:text-gray-700 after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee after:lg:h-[2px] after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out;
     }
 }
 
@@ -17,5 +19,46 @@
 @layer components{
     .bin-circle{
         @apply text-xs text-center rounded-full px-[5px] bg-orange-500 text-white ;
+    }
+}
+
+@layer components{
+    .bin-topmenu-expanded{
+        @apply bg-white text-center z-50 absolute top-10 w-full animate-slideDown;
+    }
+}
+
+@layer components{
+    .bin-story{
+       @apply text-[#a25f4b] inline-block leading-[28px] relative hover:text-[#743f2f] after:absolute after:bottom-0 after:left-0 after:bg-[#a25f4b33] hover:after:bg-[#a25f4bcc] after:h-[1px] hover:after:h-[1.5px] after:w-full after:transition-all after:duration-500 after:ease-in-out;
+    }
+}
+
+@layer components{
+    .bin-feature{
+        @apply inline-block mb-[100px] uppercase text-[12px] text-[#797a82b3] font-[700] tracking-[2px] leading-[18px] text-center relative after:content-[''] after:absolute after:bottom-[50%] after:translate-y-[50%] after:left-[-40%] after:bg-[#a25f4b33] after:h-[1px] after:w-9 before:content-[''] before:absolute before:bottom-[50%] before:translate-y-[50%] before:right-[-40%] before:bg-[#a25f4b33] before:h-[1px] before:w-9;
+    }
+}
+
+@layer components{
+    .bin-coffee-magazine{
+        @apply inline-block mb-[100px] uppercase text-[12px] text-[#797a82b3] font-[700] tracking-[2px] leading-[18px] text-center relative after:content-[''] after:absolute after:bottom-[50%] after:translate-y-[50%] after:left-[-15%] after:bg-[#a25f4b33] after:h-[1px] after:w-9 before:content-[''] before:absolute before:bottom-[50%] before:translate-y-[50%] before:right-[-15%] before:bg-[#a25f4b33] before:h-[1px] before:w-9;
+    }
+}
+
+@layer components{
+    .content-area {
+        @apply w-[calc(100%-theme(spacing.7))];
+    }
+}
+
+@layer components{
+    .bin-feature-mug{
+        @apply relative w-full h-full hover:bg-gray-900 hover:bg-opacity-10 transition-all ease-in-out duration-300;
+    }
+}
+@layer components{
+    .bin-explore-mug{
+       @apply uppercase absolute text-[#161724] hidden group-hover:block group-hover:animate-fadeIn text-center font-[700] w-11/12 tracking-[2px] text-[12px] cursor-pointer left-[50%] bottom-5 translate-x-[-50%] px-6 py-4 whitespace-nowrap bg-white hover:opacity-90;
     }
 }
